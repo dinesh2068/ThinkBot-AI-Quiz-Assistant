@@ -1,5 +1,8 @@
 
-# ThinkBot
+# THINKBOT  
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 
 **ThinkBot** is a Chrome extension built to assist students and learners by automatically detecting multiple-choice questions (MCQs) on supported Learning Management System (LMS) pages and generating AI-powered answers in real time. Unlike traditional extensions that rely on predefined datasets, ThinkBot connects directly to popular large language models (LLMs) and delivers precise answers with short keyword-based explanations.
 
@@ -68,3 +71,16 @@ Users can move the answer box to a convenient position on the screen. If needed,
 ## Limitations and Disclaimer
 
 ThinkBot is designed for educational purposes and as an aid for learning. The quality of answers depends entirely on the selected AI provider and model. The extension does not guarantee absolute accuracy and should not be used as a substitute for studying or professional advice. Users are encouraged to review and verify all AI-generated answers.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute this extension with proper credit.
+
+
+## Credits
+
+Created by **DINESHKARTHIK N** – 2025  
+Feel free to contribute or fork the project!
