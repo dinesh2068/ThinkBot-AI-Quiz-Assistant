@@ -15,12 +15,15 @@ async function callAI(model, apiKey, prompt) {
   let url, body, headers;
 
   if (model.startsWith("gemini")) {
-    url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+    const safeModel = model.includes("models/") ? model : `models/${model}`;
+    const finalModel = safeModel.endsWith("-latest") ? safeModel : `${safeModel}-latest`;
+    url = `https://generativelanguage.googleapis.com/v1/${finalModel}:generateContent?key=${apiKey}`;
     headers = { "Content-Type": "application/json" };
     body = JSON.stringify({
       contents: [{ parts: [{ text: prompt }] }]
     });
   }
+
 
   else if (model.startsWith("gpt-")) {
     url = "https://api.openai.com/v1/chat/completions";
